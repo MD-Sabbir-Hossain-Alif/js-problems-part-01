@@ -3,15 +3,16 @@
 
 const numbers = [5, 6, 11, 12, 98, 5];
 const findNum = 5;
+const findNum2 = 25;
 
-
-function repeated(nums) {
+function repeated(nums, find) {
     let count = 0;
     for (const num of nums) {
-        if (num === findNum) {
+        if (num === find) {
             count++
         }
     }
     return count;
 }
-console.log(repeated(numbers));
+console.log(repeated(numbers, findNum)); // Output: 2
+console.log(repeated(numbers, findNum2)); // Output: 0
